@@ -13,15 +13,13 @@ The year is also evenly divisible by 400. Then it is a leap year.
     # 4. 2017 -> False
     
 class LeapYearTest(unittest.TestCase):
-    def __init__(self,input):
-        self.input= input
-        
+
 
     def test_year_input(self):
-        response=leap_year.identify_leap_year(self.input)
-        self.assertEqual(response,True)
+        test_data={2024:True, 1900:False, 2000:True , 2017:False}
+        for key, value in test_data.items():
+            response=leap_year.identify_leap_year(key)
+            self.assertEqual(response,value)
 
-
-        pass
-
-
+if __name__== '__main__':
+    unittest.main()
