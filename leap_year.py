@@ -2,13 +2,23 @@
 # Mod of 400 should be zero
 
 def identify_leap_year(year):
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                return True
+    try:
+        if year % 4 == 0:
+            if year % 100 == 0:
+                if year % 400 == 0:
+                    return True
+                else:
+                    return False
             else:
-                return False
+                return True
         else:
-            return True
-    else:
-        return False
+            return False
+    except:
+        print("Invalid input")
+
+try:
+    year_input = int(input("Enter a year : "))
+except:
+    print("Invalid Input")
+
+print(identify_leap_year(year_input))
