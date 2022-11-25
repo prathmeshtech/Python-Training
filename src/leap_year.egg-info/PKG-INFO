@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: leap-year
+Version: 1.0.0
+Summary: My package description
+License: BSD 3-Clause License
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
