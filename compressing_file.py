@@ -6,7 +6,6 @@ words_dictionary['file'] = ''
 assigned_number = 1
 with open(r'test.txt', 'r') as file:
     for i, line in enumerate(file):
-        if i != 0: words_dictionary['file'] += '*'
         word_list = re.split(' ', line)
         for word in word_list:
             if word not in words_dictionary.keys():

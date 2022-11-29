@@ -19,6 +19,12 @@
             "program" : "tests\\leap_year.py",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Attach to Python Functions",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": true
         }
     ]
 }
