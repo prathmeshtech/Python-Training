@@ -1,9 +1,12 @@
 import re
+import json
+
 words_dictionary = dict()
 words_dictionary['file'] = ''
 assigned_number = 1
 with open(r'test.txt', 'r') as file:
-    for line in file:
+    for i, line in enumerate(file):
+        if i != 0: words_dictionary['file'] += '*'
         word_list = re.split(' ', line)
         for word in word_list:
             if word not in words_dictionary.keys():
@@ -16,7 +19,8 @@ with open(r'test.txt', 'r') as file:
             
 print(words_dictionary)
 
-
+with open('zip.json', 'w') as file:
+    json.dump(words_dictionary, file)
 
         
         
