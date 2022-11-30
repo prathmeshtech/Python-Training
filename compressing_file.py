@@ -15,7 +15,6 @@ with open(r'test.txt', 'r') as file:
                 assigned_number += 1
             else:
                 words_dictionary['file'] += str(words_dictionary[word])
-
 print(words_dictionary)
 
 with open('zip.json', 'w') as file:
