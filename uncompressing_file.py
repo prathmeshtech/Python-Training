@@ -1,7 +1,6 @@
 import json
 with open('zip.json', 'r') as file:
     words_dictionary = json.load(file)
-
 print(words_dictionary)
 
 with open('unzip.txt', 'w') as file:
