@@ -9,8 +9,8 @@ int main(){
     start = clock();
     int res=0;
 
-    for(int i=0; i<20000; i++){
-        for(int j=1; j<20000; j++){
+    for(int i=0; i<1000000; i++){
+        for(int j=1; j<1000000; j++){
             res = res + j;
             // printf("%d", res);
         }
