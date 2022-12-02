@@ -19,6 +19,15 @@
             "program" : "tests\\leap_year.py",
             "console": "integratedTerminal",
             "justMyCode": true
-        }
+        },
+        {
+            "name": "test_zipfile",
+            "type": "python",
+            "request": "launch",
+            "program" : "test_zipfile.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+
     ]
 }
